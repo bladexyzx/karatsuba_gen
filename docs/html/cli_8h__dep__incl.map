@@ -1,0 +1,7 @@
+<map id="src/cli.h" name="src/cli.h">
+<area shape="rect" id="Node000001" title="Command line interface of karatsuba_gen: argument parsing and file output. Errors are reported with e..." alt="" coords="70,5,138,31"/>
+<area shape="rect" id="Node000002" href="$cli_8cpp.html" title="Command line parsing and file output of karatsuba_gen." alt="" coords="5,79,88,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,43,58,80,54,77,84,40"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="Entry point: karatsuba_gen N [options] writes the Verilog description of a pipelined N x N &#45;&gt; 2N unsi..." alt="" coords="113,79,210,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="124,40,154,77,150,80,120,43"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="src/generator.h" name="src/generator.h">
+<area shape="rect" id="Node000001" title="Generator of a pipelined N x N &#45;&gt; 2N unsigned Karatsuba multiplier in Verilog&#45;2001." alt="" coords="107,5,215,31"/>
+<area shape="rect" id="Node000002" href="$cli_8h.html" title="Command line interface of karatsuba_gen: argument parsing and file output. Errors are reported with e..." alt="" coords="55,79,123,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,43,103,80,99,77,138,39"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title="Entry point: karatsuba_gen N [options] writes the Verilog description of a pipelined N x N &#45;&gt; 2N unsi..." alt="" coords="113,152,210,177"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="164,45,164,152,159,152,159,45"/>
+<area shape="rect" id="Node000005" href="$generator_8cpp.html" title="Emits the synthesisable RTL (TOP is the top level name):" alt="" coords="199,79,321,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="190,36,245,76,242,81,186,41"/>
+<area shape="rect" id="Node000003" href="$cli_8cpp.html" title="Command line parsing and file output of karatsuba_gen." alt="" coords="5,152,88,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,117,56,153,51,151,73,114"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="113,112,152,150,148,154,109,116"/>
+</map>

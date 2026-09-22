@@ -1,0 +1,19 @@
+<map id="src/cli.cpp" name="src/cli.cpp">
+<area shape="rect" id="Node000001" title="Command line parsing and file output of karatsuba_gen." alt="" coords="161,5,243,31"/>
+<area shape="rect" id="Node000002" href="$cli_8h.html" title="Command line interface of karatsuba_gen: argument parsing and file output. Errors are reported with e..." alt="" coords="51,79,97,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,33,108,74,106,69,180,28"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="122,79,189,104"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="197,32,173,69,168,66,192,30"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="213,79,285,104"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="212,30,236,66,231,69,207,32"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="309,79,388,104"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="227,28,314,70,311,75,224,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,225,60,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="60,106,38,126,20,153,17,168,17,183,24,212,19,213,12,183,12,167,16,151,34,123,56,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="85,225,143,251"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="92,102,114,123,132,151,136,167,136,184,128,214,123,212,130,183,131,168,128,153,110,126,88,106"/>
+<area shape="rect" id="Node000005" href="$generator_8h.html" title="Generator of a pipelined N x N &#45;&gt; 2N unsigned Karatsuba multiplier in Verilog&#45;2001." alt="" coords="31,152,117,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="77,104,77,138,71,138,71,104"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="69,179,49,215,44,212,65,176"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="83,176,103,212,98,215,78,179"/>
+</map>
