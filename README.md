@@ -82,10 +82,10 @@ sudo apt-get install g++ cmake iverilog verilator doxygen clang-format
 Всё собирается CMake:
 
 ```sh
-git clone <адрес репозитория> karatsuba_gen
+git clone https://github.com/bladexyzx/karatsuba_gen.git karatsuba_gen
 cd karatsuba_gen
-cmake -B build              # настройка (скачивает Doctest, ищет iverilog, doxygen, clang-format)
-cmake --build build         # сборка build/karatsuba_gen и build/unit_tests
+cmake -B build              
+cmake --build build         
 ```
 
 Сборка без интернета (без тестов): `cmake -B build -DKARATSUBA_TESTS=OFF`.
