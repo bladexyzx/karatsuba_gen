@@ -1,5 +1,4 @@
 build/
-*.vvp
-*.vcd
 CMakeCache.txt
 CMakeFiles/
+*.vvp

@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
             std::cout << karatsuba::usage();
             return 0;
         }
-        karatsuba::write_text(opt.out_file, karatsuba::generate_rtl(opt));
+        karatsuba::write_text(opt.out_file, karatsuba::generate_rtl(opt.n));
         std::cerr << "karatsuba_gen: N = " << opt.n << ", latency " << karatsuba::kLatency
                   << " clocks -> " << opt.out_file << "\n";
     } catch (const std::invalid_argument& e) {

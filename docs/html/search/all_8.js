@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['generate_5frtl_0',['generate_rtl',['../namespacekaratsuba.html#af7db9d31239c09b75160dd8f43bc78bc',1,'karatsuba']]],
-  ['generator_2ecpp_1',['generator.cpp',['../generator_8cpp.html',1,'']]],
-  ['generator_2eh_2',['generator.h',['../generator_8h.html',1,'']]]
+  ['options_0',['Options',['../structkaratsuba_1_1Options.html',1,'karatsuba']]],
+  ['out_5ffile_1',['out_file',['../structkaratsuba_1_1Options.html#a89bdd186c19447ec6d6c6d40e0296959',1,'karatsuba::Options']]]
 ];

@@ -13,6 +13,13 @@
 
 namespace karatsuba {
 
+/// @brief All settings of one program run.
+struct Options {
+    int n = 0;             ///< Operand width N, 1..kMaxWidth.
+    std::string out_file;  ///< Output file.
+    bool help = false;     ///< --help was given, nothing is generated.
+};
+
 /**
  * @brief Text printed by --help.
  * @return Multi-line usage description.
@@ -33,14 +40,14 @@ int parse_int(const std::string& s, int lo, int hi, const std::string& what);
 /**
  * @brief Parses the command line arguments.
  * @param args Arguments without the program name.
- * @return Settings; out_file defaults to `MODULE.v`, MODULE being the top
- *         level name. If help is set, the other fields are not checked.
+ * @return Settings; out_file defaults to `karatsuba_mul.v`. If help is set,
+ *         the other fields are not checked.
  * @throws std::invalid_argument for a missing N, an unknown option or a bad value.
  */
 Options parse_args(const std::vector<std::string>& args);
 
 /**
- * @brief Writes text to a file or, for path "-", to stdout.
+ * @brief Writes text to a file.
  * @param path Destination path (any relative or absolute path).
  * @param text Content to write.
  * @throws std::runtime_error if the file cannot be opened or written.

@@ -38,37 +38,3 @@ if(KARATSUBA_TESTS)
     doctest_discover_tests(unit_tests TEST_PREFIX "unit: ")
 endif()
 
-# ------------------------------------------------ simulation of the generated RTL
-# cmake --build build --target demo: generate a DEMO_N bit multiplier and simulate
-# it with tests/tb.v. Needs Icarus Verilog; other paths:
-# cmake -B build -DIVERILOG=/opt/bin/iverilog -DVVP=/opt/bin/vvp
-find_program(IVERILOG iverilog)
-find_program(VVP vvp)
-set(DEMO_N 32 CACHE STRING "Operand width for the demo target")
-if(IVERILOG AND VVP)
-    set(DEMO_DIR ${CMAKE_BINARY_DIR}/demo)
-    add_custom_target(demo
-        COMMAND ${CMAKE_COMMAND} -E make_directory ${DEMO_DIR}
-        COMMAND $<TARGET_FILE:karatsuba_gen> ${DEMO_N} -o ${DEMO_DIR}/karatsuba_mul.v
-        COMMAND ${IVERILOG} -g2005 -Wall -P tb.N=${DEMO_N} -o ${DEMO_DIR}/tb.vvp
-                ${DEMO_DIR}/karatsuba_mul.v ${CMAKE_SOURCE_DIR}/tests/tb.v
-        COMMAND ${VVP} -n ${DEMO_DIR}/tb.vvp
-        DEPENDS karatsuba_gen
-        USES_TERMINAL)
-endif()
-
-# ---------------------------------------------------------------- docs, format
-find_package(Doxygen)
-if(DOXYGEN_FOUND)
-    add_custom_target(docs
-        COMMAND ${DOXYGEN_EXECUTABLE} ${CMAKE_SOURCE_DIR}/Doxyfile
-        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-        COMMENT "Generating docs/html with Doxygen")
-endif()
-
-find_program(CLANG_FORMAT clang-format)
-if(CLANG_FORMAT)
-    file(GLOB FORMAT_SOURCES ${CMAKE_SOURCE_DIR}/src/*.cpp ${CMAKE_SOURCE_DIR}/src/*.h
-                             ${CMAKE_SOURCE_DIR}/tests/*.cpp)
-    add_custom_target(format COMMAND ${CLANG_FORMAT} -i ${FORMAT_SOURCES})
-endif()

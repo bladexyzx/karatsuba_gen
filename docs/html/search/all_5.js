@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['cli_2ecpp_0',['cli.cpp',['../cli_8cpp.html',1,'']]],
-  ['cli_2eh_1',['cli.h',['../cli_8h.html',1,'']]]
+  ['lo_0',['lo',['../structkaratsuba_1_1Split.html#a2250e195573ea4044f1da7f23f6b3bfc',1,'karatsuba::Split']]]
 ];

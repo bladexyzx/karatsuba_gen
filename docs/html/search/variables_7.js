@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['out_5ffile_0',['out_file',['../structkaratsuba_1_1Options.html#a89bdd186c19447ec6d6c6d40e0296959',1,'karatsuba::Options']]]
+  ['width_0',['width',['../structkaratsuba_1_1anonymous__namespace_02generator_8cpp_03_1_1Sig.html#abce81d1bb994a43a290b86536be24e57',1,'karatsuba::anonymous_namespace{generator.cpp}::Sig']]]
 ];

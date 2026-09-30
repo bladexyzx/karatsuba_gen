@@ -76,8 +76,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">karatsuba::anonymous_namespace{generator.cpp} Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -117,26 +116,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a9e9f2f969b850be698edc0e64fcec96c" id="r_a9e9f2f969b850be698edc0e64fcec96c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a9e9f2f969b850be698edc0e64fcec96c">emit_phase</a> (std::ostringstream &amp;os, bool pipe, int stage, const std::string &amp;text)</td></tr>
 <tr class="memdesc:a9e9f2f969b850be698edc0e64fcec96c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the comment line in front of one phase of a Karatsuba step.  <br /></td></tr>
 <tr class="separator:a9e9f2f969b850be698edc0e64fcec96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63f8860c3a389cf961d6c6662663159e" id="r_a63f8860c3a389cf961d6c6662663159e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a63f8860c3a389cf961d6c6662663159e">emit_step</a> (std::ostringstream &amp;os, const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt, int w, bool pipe)</td></tr>
-<tr class="memdesc:a63f8860c3a389cf961d6c6662663159e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the body of one Karatsuba step on the w bit ports a, b.  <br /></td></tr>
-<tr class="separator:a63f8860c3a389cf961d6c6662663159e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1c3a3329c89c21721fa5ff81e6bc66" id="r_a8e1c3a3329c89c21721fa5ff81e6bc66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a8e1c3a3329c89c21721fa5ff81e6bc66">emit_step</a> (std::ostringstream &amp;os, int w, bool pipe)</td></tr>
+<tr class="memdesc:a8e1c3a3329c89c21721fa5ff81e6bc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the body of one Karatsuba step on the w bit ports a, b.  <br /></td></tr>
+<tr class="separator:a8e1c3a3329c89c21721fa5ff81e6bc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c59d2ecc3d48de57fa713485b49db0" id="r_a40c59d2ecc3d48de57fa713485b49db0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a40c59d2ecc3d48de57fa713485b49db0">emit_header</a> (std::ostringstream &amp;os, const std::string &amp;name, int w, const std::string &amp;comment, const std::string &amp;extra_ports)</td></tr>
 <tr class="memdesc:a40c59d2ecc3d48de57fa713485b49db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the module header with the operand and product ports.  <br /></td></tr>
 <tr class="separator:a40c59d2ecc3d48de57fa713485b49db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599a7b2c70a342e3f1afdb49a4e9e74b" id="r_a599a7b2c70a342e3f1afdb49a4e9e74b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a599a7b2c70a342e3f1afdb49a4e9e74b">emit_leaf</a> (std::ostringstream &amp;os, const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt, int w)</td></tr>
-<tr class="memdesc:a599a7b2c70a342e3f1afdb49a4e9e74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits a w x w combinational leaf multiplier.  <br /></td></tr>
-<tr class="separator:a599a7b2c70a342e3f1afdb49a4e9e74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67672bf57df4357c6b9717051c32b4c9" id="r_a67672bf57df4357c6b9717051c32b4c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a67672bf57df4357c6b9717051c32b4c9">emit_kara</a> (std::ostringstream &amp;os, const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt, int w)</td></tr>
-<tr class="memdesc:a67672bf57df4357c6b9717051c32b4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits a w x w combinational Karatsuba step module.  <br /></td></tr>
-<tr class="separator:a67672bf57df4357c6b9717051c32b4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3399aaa573d030b6e536aea15e3509af" id="r_a3399aaa573d030b6e536aea15e3509af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a3399aaa573d030b6e536aea15e3509af">emit_top</a> (std::ostringstream &amp;os, const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt)</td></tr>
-<tr class="memdesc:a3399aaa573d030b6e536aea15e3509af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the pipelined top level module.  <br /></td></tr>
-<tr class="separator:a3399aaa573d030b6e536aea15e3509af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a31323e56acd66f6b5a5e5cec22fa0f83" id="r_a31323e56acd66f6b5a5e5cec22fa0f83"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a31323e56acd66f6b5a5e5cec22fa0f83">kReserved</a> []</td></tr>
-<tr class="separator:a31323e56acd66f6b5a5e5cec22fa0f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f3f10b34c9cdd81ca3c76512d17bf4" id="r_a88f3f10b34c9cdd81ca3c76512d17bf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a88f3f10b34c9cdd81ca3c76512d17bf4">emit_leaf</a> (std::ostringstream &amp;os, int w)</td></tr>
+<tr class="memdesc:a88f3f10b34c9cdd81ca3c76512d17bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits a w x w combinational leaf: the recursion base, where Karatsuba cannot shrink the operands any more.  <br /></td></tr>
+<tr class="separator:a88f3f10b34c9cdd81ca3c76512d17bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505dab8c1e54e3a2ee669c7f28c0194c" id="r_a505dab8c1e54e3a2ee669c7f28c0194c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a505dab8c1e54e3a2ee669c7f28c0194c">emit_kara</a> (std::ostringstream &amp;os, int w)</td></tr>
+<tr class="memdesc:a505dab8c1e54e3a2ee669c7f28c0194c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits a w x w combinational Karatsuba step module.  <br /></td></tr>
+<tr class="separator:a505dab8c1e54e3a2ee669c7f28c0194c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6900a78c1303b6703830d74669dc843" id="r_ad6900a78c1303b6703830d74669dc843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#ad6900a78c1303b6703830d74669dc843">emit_top</a> (std::ostringstream &amp;os, int n)</td></tr>
+<tr class="memdesc:ad6900a78c1303b6703830d74669dc843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the pipelined top level module.  <br /></td></tr>
+<tr class="separator:ad6900a78c1303b6703830d74669dc843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a40c59d2ecc3d48de57fa713485b49db0" name="a40c59d2ecc3d48de57fa713485b49db0"></a>
@@ -195,12 +189,12 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00176">176</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00173">173</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a67672bf57df4357c6b9717051c32b4c9" name="a67672bf57df4357c6b9717051c32b4c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67672bf57df4357c6b9717051c32b4c9">&#9670;&#160;</a></span>emit_kara()</h2>
+<a id="a505dab8c1e54e3a2ee669c7f28c0194c" name="a505dab8c1e54e3a2ee669c7f28c0194c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a505dab8c1e54e3a2ee669c7f28c0194c">&#9670;&#160;</a></span>emit_kara()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,12 +204,6 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">std::ostringstream &amp;&#160;</td>
           <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;&#160;</td>
-          <td class="paramname"><em>opt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -235,18 +223,17 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">os</td><td>Output stream. </td></tr>
-    <tr><td class="paramname">opt</td><td>Generator settings. </td></tr>
-    <tr><td class="paramname">w</td><td>Operand width, greater than base. </td></tr>
+    <tr><td class="paramname">w</td><td>Operand width, greater than kLeafWidth. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00213">213</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00207">207</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a599a7b2c70a342e3f1afdb49a4e9e74b" name="a599a7b2c70a342e3f1afdb49a4e9e74b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a599a7b2c70a342e3f1afdb49a4e9e74b">&#9670;&#160;</a></span>emit_leaf()</h2>
+<a id="a88f3f10b34c9cdd81ca3c76512d17bf4" name="a88f3f10b34c9cdd81ca3c76512d17bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f3f10b34c9cdd81ca3c76512d17bf4">&#9670;&#160;</a></span>emit_leaf()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,12 +243,6 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">std::ostringstream &amp;&#160;</td>
           <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;&#160;</td>
-          <td class="paramname"><em>opt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -277,17 +258,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Emits a w x w combinational leaf multiplier. </p>
+<p>Emits a w x w combinational leaf: the recursion base, where Karatsuba cannot shrink the operands any more. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">os</td><td>Output stream. </td></tr>
-    <tr><td class="paramname">opt</td><td>Generator settings. </td></tr>
-    <tr><td class="paramname">w</td><td>Operand width, 1..base. </td></tr>
+    <tr><td class="paramname">w</td><td>Operand width, 1..kLeafWidth. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00191">191</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00188">188</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -340,7 +320,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00103">103</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00107">107</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -379,12 +359,12 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00087">87</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00091">91</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a63f8860c3a389cf961d6c6662663159e" name="a63f8860c3a389cf961d6c6662663159e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63f8860c3a389cf961d6c6662663159e">&#9670;&#160;</a></span>emit_step()</h2>
+<a id="a8e1c3a3329c89c21721fa5ff81e6bc66" name="a8e1c3a3329c89c21721fa5ff81e6bc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e1c3a3329c89c21721fa5ff81e6bc66">&#9670;&#160;</a></span>emit_step()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -394,12 +374,6 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">std::ostringstream &amp;&#160;</td>
           <td class="paramname"><em>os</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;&#160;</td>
-          <td class="paramname"><em>opt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -425,19 +399,18 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">os</td><td>Output stream. </td></tr>
-    <tr><td class="paramname">opt</td><td>Generator settings. </td></tr>
     <tr><td class="paramname">w</td><td>Operand width, at least 2. </td></tr>
     <tr><td class="paramname">pipe</td><td>true: split, multiplication and recombination are separated by registers (top level); false: purely combinational. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00117">117</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00120">120</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a3399aaa573d030b6e536aea15e3509af" name="a3399aaa573d030b6e536aea15e3509af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3399aaa573d030b6e536aea15e3509af">&#9670;&#160;</a></span>emit_top()</h2>
+<a id="ad6900a78c1303b6703830d74669dc843" name="ad6900a78c1303b6703830d74669dc843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6900a78c1303b6703830d74669dc843">&#9670;&#160;</a></span>emit_top()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,8 +424,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;&#160;</td>
-          <td class="paramname"><em>opt</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -466,12 +439,12 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">os</td><td>Output stream. </td></tr>
-    <tr><td class="paramname">opt</td><td>Generator settings. </td></tr>
+    <tr><td class="paramname">n</td><td>Operand width N. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00223">223</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00217">217</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -510,7 +483,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00077">77</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00081">81</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -539,7 +512,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>v as a string. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00028">28</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00032">32</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -568,7 +541,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>"[w-1:0]". </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00033">33</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00037">37</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -590,7 +563,7 @@ Variables</h2></td></tr>
 <p>Horizontal rule used to separate modules. </p>
 <dl class="section return"><dt>Returns</dt><dd>A comment line of dashes. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00072">72</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00076">76</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -650,7 +623,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00053">53</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00057">57</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -679,7 +652,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>"1'b0" or "{n{1'b0}}". </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00038">38</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00042">42</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -726,52 +699,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Expression of exactly to bits. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00068">68</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a31323e56acd66f6b5a5e5cec22fa0f83" name="a31323e56acd66f6b5a5e5cec22fa0f83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31323e56acd66f6b5a5e5cec22fa0f83">&#9670;&#160;</a></span>kReserved</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char karatsuba::anonymous_namespace{generator.cpp}::kReserved[]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="stringliteral">&quot; accept_on alias always always_comb always_ff always_latch and assert assign assume&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; automatic before begin bind bins binsof bit bool break buf bufif0 bufif1 byte case&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; casex casez cell chandle checker class clocking cmos config const constraint context&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; continue cover covergroup coverpoint cross deassign default defparam design disable&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; dist do edge else end endcase endchecker endclass endclocking endconfig endfunction&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; endgenerate endgroup endinterface endmodule endpackage endprimitive endprogram&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; endproperty endspecify endsequence endtable endtask enum event eventually expect&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; export extends extern final first_match for force foreach forever fork forkjoin&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; function generate genvar global highz0 highz1 if iff ifnone ignore_bins illegal_bins&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; implements implies import incdir include initial inout input inside instance int&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; integer interconnect interface intersect join join_any join_none large let liblist&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; library local localparam logic longint macromodule matches medium modport module&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; nand negedge nettype new nexttime nmos nor noshowcancelled not notif0 notif1 null or&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; output package packed parameter pmos posedge primitive priority program property&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; protected pull0 pull1 pulldown pullup pulsestyle_ondetect pulsestyle_onevent pure&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; rand randc randcase randsequence rcmos real realtime ref reg reject_on release repeat&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; restrict return rnmos rpmos rtran rtranif0 rtranif1 s_always s_eventually s_nexttime&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; s_until s_until_with scalared sequence shortint shortreal showcancelled signed small&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; soft solve specify specparam static string strong strong0 strong1 struct super&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; supply0 supply1 sync_accept_on sync_reject_on table tagged task this throughout time&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; timeprecision timeunit tran tranif0 tranif1 tri tri0 tri1 triand trior trireg type&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; typedef union unique unique0 unsigned until until_with untyped use uwire var vectored&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; virtual void wait wait_order wand weak weak0 weak1 while wildcard wire with within&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; wor xnor xor&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; a b p clk rst_n in_valid out_valid vld a0 a1 b0 b1 sa sb m0 m2 mm z0 z2 zm zd z1 pr&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot; s1 s2 s3 u_z0 u_z2 u_zm &quot;</span></div>
-</div><!-- fragment --><p>Names the top level module may not have: the reserved words of SystemVerilog (IEEE 1800-2017, a superset of Verilog-2005), Icarus' "bool", and the signal names used inside the generated top level. </p>
-
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00258">258</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00072">72</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['help_0',['help',['../structkaratsuba_1_1Options.html#af56c0407b49314242fa1b3183e3e5ac3',1,'karatsuba::Options']]],
-  ['hi_1',['hi',['../structkaratsuba_1_1Split.html#aaa653b23f7d1d547be7490ca3c7f4292',1,'karatsuba::Split']]]
+  ['parse_5fargs_0',['parse_args',['../namespacekaratsuba.html#a47d4bacd08b9b7dc17b6aaaddadd0d49',1,'karatsuba']]],
+  ['parse_5fint_1',['parse_int',['../namespacekaratsuba.html#ad8d71b857ee6527925289933ca792523',1,'karatsuba']]]
 ];

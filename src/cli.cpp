@@ -5,7 +5,6 @@
 #include "cli.h"
 
 #include <fstream>
-#include <iostream>
 #include <stdexcept>
 
 namespace karatsuba {
@@ -16,10 +15,7 @@ std::string usage() {
            "The product appears on the 3rd clock edge, one new result every clock.\n"
            "\n"
            "  N                  operand width, 1..4096\n"
-           "  -o, --output FILE  output file, '-' for stdout (default <module>.v)\n"
-           "  -m, --module NAME  top level module name (default karatsuba_mul)\n"
-           "  -b, --base W       recursion stops at W bits, 3..32 (default 4)\n"
-           "      --leaf-star    leaf multipliers use '*' (e.g. for FPGA DSP blocks)\n"
+           "  -o, --output FILE  output file (default karatsuba_mul.v)\n"
            "  -h, --help         show this text\n";
 }
 
@@ -43,8 +39,7 @@ Options parse_args(const std::vector<std::string>& args) {
     std::size_t i = 0;
     while (i < args.size()) {
         std::string a = args[i];
-        bool needs_value = a == "-o" || a == "--output" || a == "-m" || a == "--module" ||
-                           a == "-b" || a == "--base";
+        bool needs_value = a == "-o" || a == "--output";
         std::string value;
         if (needs_value) {
             if (i + 1 >= args.size()) throw std::invalid_argument("option " + a + " needs a value");
@@ -55,17 +50,8 @@ Options parse_args(const std::vector<std::string>& args) {
         if (a == "-h" || a == "--help") {
             opt.help = true;
             return opt;
-        } else if (a == "--leaf-star") {
-            opt.leaf_star = true;
         } else if (a == "-o" || a == "--output") {
             opt.out_file = value;
-        } else if (a == "-m" || a == "--module") {
-            if (!valid_module_name(value)) {
-                throw std::invalid_argument("'" + value + "' is not a usable Verilog module name");
-            }
-            opt.top = value;
-        } else if (a == "-b" || a == "--base") {
-            opt.base = parse_int(value, kMinBase, kMaxBase, "leaf width");
         } else if (a.size() > 1 && a[0] == '-') {
             throw std::invalid_argument("unknown option '" + a + "' (see --help)");
         } else if (have_n) {
@@ -78,17 +64,11 @@ Options parse_args(const std::vector<std::string>& args) {
     }
 
     if (!have_n) throw std::invalid_argument("operand width N is missing (see --help)");
-    if (opt.out_file.empty()) opt.out_file = opt.top + ".v";
+    if (opt.out_file.empty()) opt.out_file = std::string(kTop) + ".v";
     return opt;
 }
 
 void write_text(const std::string& path, const std::string& text) {
-    if (path == "-") {
-        std::cout << text;
-        std::cout.flush();
-        if (!std::cout) throw std::runtime_error("cannot write to stdout");
-        return;
-    }
     std::ofstream file(path);
     if (!file) throw std::runtime_error("cannot open " + path);
     file << text;
@@ -96,4 +76,4 @@ void write_text(const std::string& path, const std::string& text) {
     if (!file) throw std::runtime_error("cannot write " + path);
 }
 
-}  // namespace karatsuba
+} 

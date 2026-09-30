@@ -102,47 +102,43 @@ Functions</h2></td></tr>
 <tr class="memdesc:a47d4bacd08b9b7dc17b6aaaddadd0d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the command line arguments.  <br /></td></tr>
 <tr class="separator:a47d4bacd08b9b7dc17b6aaaddadd0d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a724d271525ecc1e5e62a1c84a4ed8e2e" id="r_a724d271525ecc1e5e62a1c84a4ed8e2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a724d271525ecc1e5e62a1c84a4ed8e2e">write_text</a> (const std::string &amp;path, const std::string &amp;text)</td></tr>
-<tr class="memdesc:a724d271525ecc1e5e62a1c84a4ed8e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes text to a file or, for path "-", to stdout.  <br /></td></tr>
+<tr class="memdesc:a724d271525ecc1e5e62a1c84a4ed8e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes text to a file.  <br /></td></tr>
 <tr class="separator:a724d271525ecc1e5e62a1c84a4ed8e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56c94e4ca69da9fb9891621e5d72a7ec" id="r_a56c94e4ca69da9fb9891621e5d72a7ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a56c94e4ca69da9fb9891621e5d72a7ec">valid_module_name</a> (const std::string &amp;s)</td></tr>
-<tr class="memdesc:a56c94e4ca69da9fb9891621e5d72a7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that s can name the top level module.  <br /></td></tr>
-<tr class="separator:a56c94e4ca69da9fb9891621e5d72a7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e899df703688ed59dd9acfaa8770e1" id="r_a32e899df703688ed59dd9acfaa8770e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a32e899df703688ed59dd9acfaa8770e1">validate</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt)</td></tr>
-<tr class="memdesc:a32e899df703688ed59dd9acfaa8770e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the fields used by the generator.  <br /></td></tr>
-<tr class="separator:a32e899df703688ed59dd9acfaa8770e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76f0a0bc8a4bdf24511d7808b7349c0" id="r_ab76f0a0bc8a4bdf24511d7808b7349c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#ab76f0a0bc8a4bdf24511d7808b7349c0">validate</a> (int n)</td></tr>
+<tr class="memdesc:ab76f0a0bc8a4bdf24511d7808b7349c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the operand width.  <br /></td></tr>
+<tr class="separator:ab76f0a0bc8a4bdf24511d7808b7349c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a019bd86b899d774eb77ec130af0b8054" id="r_a019bd86b899d774eb77ec130af0b8054"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structkaratsuba_1_1Split.html">Split</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a019bd86b899d774eb77ec130af0b8054">split_of</a> (int w)</td></tr>
 <tr class="memdesc:a019bd86b899d774eb77ec130af0b8054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a w bit operand into halves for one Karatsuba step.  <br /></td></tr>
 <tr class="separator:a019bd86b899d774eb77ec130af0b8054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ffa16ce2533bdb5a9d7fdf7e2479575" id="r_a6ffa16ce2533bdb5a9d7fdf7e2479575"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a6ffa16ce2533bdb5a9d7fdf7e2479575">mul_module</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt, int w)</td></tr>
-<tr class="memdesc:a6ffa16ce2533bdb5a9d7fdf7e2479575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the w bit sub-multiplier module.  <br /></td></tr>
-<tr class="separator:a6ffa16ce2533bdb5a9d7fdf7e2479575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac913c971d77125c9161a40fcdf31d444" id="r_ac913c971d77125c9161a40fcdf31d444"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#ac913c971d77125c9161a40fcdf31d444">required_widths</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt)</td></tr>
-<tr class="memdesc:ac913c971d77125c9161a40fcdf31d444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists the widths of all sub-multiplier modules needed for opt.n.  <br /></td></tr>
-<tr class="separator:ac913c971d77125c9161a40fcdf31d444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7db9d31239c09b75160dd8f43bc78bc" id="r_af7db9d31239c09b75160dd8f43bc78bc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#af7db9d31239c09b75160dd8f43bc78bc">generate_rtl</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt)</td></tr>
-<tr class="memdesc:af7db9d31239c09b75160dd8f43bc78bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the synthesisable multiplier.  <br /></td></tr>
-<tr class="separator:af7db9d31239c09b75160dd8f43bc78bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8879cf60f2cefdf6aa0084ad8a61634d" id="r_a8879cf60f2cefdf6aa0084ad8a61634d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a8879cf60f2cefdf6aa0084ad8a61634d">mul_module</a> (int w)</td></tr>
+<tr class="memdesc:a8879cf60f2cefdf6aa0084ad8a61634d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the w bit sub-multiplier module.  <br /></td></tr>
+<tr class="separator:a8879cf60f2cefdf6aa0084ad8a61634d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67393e9e0fe9863dc686c220710bce4" id="r_ab67393e9e0fe9863dc686c220710bce4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#ab67393e9e0fe9863dc686c220710bce4">required_widths</a> (int n)</td></tr>
+<tr class="memdesc:ab67393e9e0fe9863dc686c220710bce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists the widths of all sub-multiplier modules needed for N = n.  <br /></td></tr>
+<tr class="separator:ab67393e9e0fe9863dc686c220710bce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d4ba7c0d575ca8bebe4c306e5cee2a" id="r_a24d4ba7c0d575ca8bebe4c306e5cee2a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a24d4ba7c0d575ca8bebe4c306e5cee2a">generate_rtl</a> (int n)</td></tr>
+<tr class="memdesc:a24d4ba7c0d575ca8bebe4c306e5cee2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the synthesisable multiplier.  <br /></td></tr>
+<tr class="separator:a24d4ba7c0d575ca8bebe4c306e5cee2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a551219645b3269c138ae5026f514e69e" id="r_a551219645b3269c138ae5026f514e69e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a551219645b3269c138ae5026f514e69e">kMaxWidth</a> = 4096</td></tr>
 <tr class="memdesc:a551219645b3269c138ae5026f514e69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Largest supported operand width N.  <br /></td></tr>
 <tr class="separator:a551219645b3269c138ae5026f514e69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a690c88f7ef071cdb2a3cccdf773b43ce" id="r_a690c88f7ef071cdb2a3cccdf773b43ce"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a690c88f7ef071cdb2a3cccdf773b43ce">kMinBase</a> = 3</td></tr>
-<tr class="memdesc:a690c88f7ef071cdb2a3cccdf773b43ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smallest leaf width; smaller leaves would not end the recursion.  <br /></td></tr>
-<tr class="separator:a690c88f7ef071cdb2a3cccdf773b43ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f68242b25738dcecb63c1523c7ed1c" id="r_a82f68242b25738dcecb63c1523c7ed1c"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a82f68242b25738dcecb63c1523c7ed1c">kMaxBase</a> = 32</td></tr>
-<tr class="memdesc:a82f68242b25738dcecb63c1523c7ed1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Largest leaf width.  <br /></td></tr>
-<tr class="separator:a82f68242b25738dcecb63c1523c7ed1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbe07a8a40438ce9ae11c91eed65be5" id="r_a6cbe07a8a40438ce9ae11c91eed65be5"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a6cbe07a8a40438ce9ae11c91eed65be5">kLeafWidth</a> = 4</td></tr>
+<tr class="separator:a6cbe07a8a40438ce9ae11c91eed65be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92073b91688a51291eb1cf21a1ce6309" id="r_a92073b91688a51291eb1cf21a1ce6309"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a92073b91688a51291eb1cf21a1ce6309">kLatency</a> = 3</td></tr>
 <tr class="memdesc:a92073b91688a51291eb1cf21a1ce6309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pipeline depth in clocks, fixed by the specification.  <br /></td></tr>
 <tr class="separator:a92073b91688a51291eb1cf21a1ce6309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3eda9d39f0025ba327bbe1aa6ef115" id="r_aca3eda9d39f0025ba327bbe1aa6ef115"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#aca3eda9d39f0025ba327bbe1aa6ef115">kTop</a> [] = &quot;karatsuba_mul&quot;</td></tr>
+<tr class="memdesc:aca3eda9d39f0025ba327bbe1aa6ef115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the top level module.  <br /></td></tr>
+<tr class="separator:aca3eda9d39f0025ba327bbe1aa6ef115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Everything related to the Karatsuba multiplier generator. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="af7db9d31239c09b75160dd8f43bc78bc" name="af7db9d31239c09b75160dd8f43bc78bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7db9d31239c09b75160dd8f43bc78bc">&#9670;&#160;</a></span>generate_rtl()</h2>
+<a id="a24d4ba7c0d575ca8bebe4c306e5cee2a" name="a24d4ba7c0d575ca8bebe4c306e5cee2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d4ba7c0d575ca8bebe4c306e5cee2a">&#9670;&#160;</a></span>generate_rtl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,8 +146,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">std::string karatsuba::generate_rtl </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;&#160;</td>
-          <td class="paramname"><em>opt</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -160,24 +156,24 @@ Variables</h2></td></tr>
 <p>Generates the synthesisable multiplier. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opt</td><td>Generator settings. </td></tr>
+    <tr><td class="paramname">n</td><td>Operand width N. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Verilog text: the leaf and Karatsuba sub-modules followed by the pipelined top level module with latency kLatency. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td>if the options are invalid. </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>if n is out of range. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00347">347</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00277">277</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a6ffa16ce2533bdb5a9d7fdf7e2479575" name="a6ffa16ce2533bdb5a9d7fdf7e2479575"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ffa16ce2533bdb5a9d7fdf7e2479575">&#9670;&#160;</a></span>mul_module()</h2>
+<a id="a8879cf60f2cefdf6aa0084ad8a61634d" name="a8879cf60f2cefdf6aa0084ad8a61634d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8879cf60f2cefdf6aa0084ad8a61634d">&#9670;&#160;</a></span>mul_module()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,19 +181,9 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">std::string karatsuba::mul_module </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;&#160;</td>
-          <td class="paramname"><em>opt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>w</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -205,14 +191,13 @@ Variables</h2></td></tr>
 <p>Name of the w bit sub-multiplier module. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opt</td><td>Generator settings (top and base are used). </td></tr>
     <tr><td class="paramname">w</td><td>Operand width of the sub-multiplier. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>TOP_leaf_wW</code> for w &lt;= base, otherwise <code>TOP_kara_wW</code>, where TOP is opt.top and W is w. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>karatsuba_mul_leaf_wW</code> for w &lt;= kLeafWidth, otherwise <code>karatsuba_mul_kara_wW</code>, where W is w. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00323">323</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00253">253</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -239,7 +224,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Settings; out_file defaults to <code>MODULE.v</code>, MODULE being the top level name. If help is set, the other fields are not checked. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Settings; out_file defaults to <code>karatsuba_mul.v</code>. If help is set, the other fields are not checked. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::invalid_argument</td><td>for a missing N, an unknown option or a bad value. </td></tr>
@@ -247,7 +232,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="cli_8cpp_source.html#l00039">39</a> of file <a class="el" href="cli_8cpp_source.html">cli.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cli_8cpp_source.html#l00035">35</a> of file <a class="el" href="cli_8cpp_source.html">cli.cpp</a>.</p>
 
 </div>
 </div>
@@ -307,12 +292,12 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="cli_8cpp_source.html#l00026">26</a> of file <a class="el" href="cli_8cpp_source.html">cli.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cli_8cpp_source.html#l00022">22</a> of file <a class="el" href="cli_8cpp_source.html">cli.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ac913c971d77125c9161a40fcdf31d444" name="ac913c971d77125c9161a40fcdf31d444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac913c971d77125c9161a40fcdf31d444">&#9670;&#160;</a></span>required_widths()</h2>
+<a id="ab67393e9e0fe9863dc686c220710bce4" name="ab67393e9e0fe9863dc686c220710bce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab67393e9e0fe9863dc686c220710bce4">&#9670;&#160;</a></span>required_widths()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,29 +305,29 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">std::vector&lt; int &gt; karatsuba::required_widths </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;&#160;</td>
-          <td class="paramname"><em>opt</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Lists the widths of all sub-multiplier modules needed for opt.n. </p>
+<p>Lists the widths of all sub-multiplier modules needed for N = n. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opt</td><td>Generator settings (n and base are used). </td></tr>
+    <tr><td class="paramname">n</td><td>Operand width of the top level. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Distinct widths in ascending order, so every module can be defined before it is instantiated. The top level itself is not included, the list is empty for N = 1. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td>if the options are invalid. </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>if n is out of range. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00328">328</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00258">258</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -377,7 +362,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00314">314</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00244">244</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -399,41 +384,12 @@ Variables</h2></td></tr>
 <p>Text printed by &ndash;help. </p>
 <dl class="section return"><dt>Returns</dt><dd>Multi-line usage description. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="cli_8cpp_source.html#l00013">13</a> of file <a class="el" href="cli_8cpp_source.html">cli.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cli_8cpp_source.html#l00012">12</a> of file <a class="el" href="cli_8cpp_source.html">cli.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a56c94e4ca69da9fb9891621e5d72a7ec" name="a56c94e4ca69da9fb9891621e5d72a7ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56c94e4ca69da9fb9891621e5d72a7ec">&#9670;&#160;</a></span>valid_module_name()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool karatsuba::valid_module_name </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks that s can name the top level module. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s</td><td>Candidate name. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true for a plain Verilog identifier that is neither a reserved word nor a signal name used inside the generated module. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00288">288</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a32e899df703688ed59dd9acfaa8770e1" name="a32e899df703688ed59dd9acfaa8770e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32e899df703688ed59dd9acfaa8770e1">&#9670;&#160;</a></span>validate()</h2>
+<a id="ab76f0a0bc8a4bdf24511d7808b7349c0" name="ab76f0a0bc8a4bdf24511d7808b7349c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab76f0a0bc8a4bdf24511d7808b7349c0">&#9670;&#160;</a></span>validate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -441,28 +397,28 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void karatsuba::validate </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;&#160;</td>
-          <td class="paramname"><em>opt</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks the fields used by the generator. </p>
+<p>Checks the operand width. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opt</td><td>Settings to check. </td></tr>
+    <tr><td class="paramname">n</td><td>Operand width N. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td>naming the first invalid field. </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>if n is not in 1..kMaxWidth. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00301">301</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8cpp_source.html#l00238">238</a> of file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>
 
 </div>
 </div>
@@ -492,7 +448,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Writes text to a file or, for path "-", to stdout. </p>
+<p>Writes text to a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Destination path (any relative or absolute path). </td></tr>
@@ -507,7 +463,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="cli_8cpp_source.html#l00085">85</a> of file <a class="el" href="cli_8cpp_source.html">cli.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cli_8cpp_source.html#l00071">71</a> of file <a class="el" href="cli_8cpp_source.html">cli.cpp</a>.</p>
 
 </div>
 </div>
@@ -526,25 +482,24 @@ Variables</h2></td></tr>
 
 <p>Pipeline depth in clocks, fixed by the specification. </p>
 
-<p class="definition">Definition at line <a class="el" href="generator_8h_source.html#l00018">18</a> of file <a class="el" href="generator_8h_source.html">generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8h_source.html#l00019">19</a> of file <a class="el" href="generator_8h_source.html">generator.h</a>.</p>
 
 </div>
 </div>
-<a id="a82f68242b25738dcecb63c1523c7ed1c" name="a82f68242b25738dcecb63c1523c7ed1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82f68242b25738dcecb63c1523c7ed1c">&#9670;&#160;</a></span>kMaxBase</h2>
+<a id="a6cbe07a8a40438ce9ae11c91eed65be5" name="a6cbe07a8a40438ce9ae11c91eed65be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cbe07a8a40438ce9ae11c91eed65be5">&#9670;&#160;</a></span>kLeafWidth</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int karatsuba::kMaxBase = 32</td>
+          <td class="memname">const int karatsuba::kLeafWidth = 4</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Operands of at most this many bits use a leaf: long multiplication built from bitwise AND and adders. At least 3, smaller leaves would not end the recursion. </p>
 
-<p>Largest leaf width. </p>
-
-<p class="definition">Definition at line <a class="el" href="generator_8h_source.html#l00017">17</a> of file <a class="el" href="generator_8h_source.html">generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8h_source.html#l00016">16</a> of file <a class="el" href="generator_8h_source.html">generator.h</a>.</p>
 
 </div>
 </div>
@@ -566,21 +521,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a690c88f7ef071cdb2a3cccdf773b43ce" name="a690c88f7ef071cdb2a3cccdf773b43ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a690c88f7ef071cdb2a3cccdf773b43ce">&#9670;&#160;</a></span>kMinBase</h2>
+<a id="aca3eda9d39f0025ba327bbe1aa6ef115" name="aca3eda9d39f0025ba327bbe1aa6ef115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3eda9d39f0025ba327bbe1aa6ef115">&#9670;&#160;</a></span>kTop</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int karatsuba::kMinBase = 3</td>
+          <td class="memname">const char karatsuba::kTop[] = &quot;karatsuba_mul&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Smallest leaf width; smaller leaves would not end the recursion. </p>
+<p>Name of the top level module. </p>
 
-<p class="definition">Definition at line <a class="el" href="generator_8h_source.html#l00016">16</a> of file <a class="el" href="generator_8h_source.html">generator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="generator_8h_source.html#l00020">20</a> of file <a class="el" href="generator_8h_source.html">generator.h</a>.</p>
 
 </div>
 </div>

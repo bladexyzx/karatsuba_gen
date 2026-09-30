@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['help_0',['help',['../structkaratsuba_1_1Options.html#af56c0407b49314242fa1b3183e3e5ac3',1,'karatsuba::Options']]],
-  ['hi_1',['hi',['../structkaratsuba_1_1Split.html#aaa653b23f7d1d547be7490ca3c7f4292',1,'karatsuba::Split']]]
+  ['klatency_0',['kLatency',['../namespacekaratsuba.html#a92073b91688a51291eb1cf21a1ce6309',1,'karatsuba']]],
+  ['kleafwidth_1',['kLeafWidth',['../namespacekaratsuba.html#a6cbe07a8a40438ce9ae11c91eed65be5',1,'karatsuba']]],
+  ['kmaxwidth_2',['kMaxWidth',['../namespacekaratsuba.html#a551219645b3269c138ae5026f514e69e',1,'karatsuba']]],
+  ['ktop_3',['kTop',['../namespacekaratsuba.html#aca3eda9d39f0025ba327bbe1aa6ef115',1,'karatsuba']]]
 ];

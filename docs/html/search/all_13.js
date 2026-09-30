@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['top_0',['top',['../structkaratsuba_1_1Options.html#af6414a714646e4ae593f2eb6b1e5464d',1,'karatsuba::Options']]]
+  ['назначение_0',['Назначение',['../index.html#autotoc_md1',1,'']]],
+  ['на_20verilog_1',['karatsuba_gen — генератор конвейерного умножителя Карацубы на Verilog',['../index.html',1,'']]]
 ];

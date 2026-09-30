@@ -13,19 +13,11 @@
 namespace karatsuba {
 
 const int kMaxWidth = 4096;  ///< Largest supported operand width N.
-const int kMinBase = 3;      ///< Smallest leaf width; smaller leaves would not end the recursion.
-const int kMaxBase = 32;     ///< Largest leaf width.
+const int kLeafWidth = 4;    ///< Operands of at most this many bits use a leaf: long
+                             ///< multiplication built from bitwise AND and adders. At least 3,
+                             ///< smaller leaves would not end the recursion.
 const int kLatency = 3;      ///< Pipeline depth in clocks, fixed by the specification.
-
-/// @brief All settings of one program run.
-struct Options {
-    int n = 0;               ///< Operand width N, 1..kMaxWidth.
-    int base = 4;            ///< Operands of at most this many bits use a leaf multiplier.
-    bool leaf_star = false;  ///< Leaf multipliers use the '*' operator instead of shift-add.
-    std::string top = "karatsuba_mul";  ///< Name of the top level module.
-    std::string out_file;               ///< Output file, "-" means stdout.
-    bool help = false;                  ///< --help was given, nothing is generated.
-};
+const char kTop[] = "karatsuba_mul";  ///< Name of the top level module.
 
 /**
  * @brief Widths of one Karatsuba step on a w bit operand:
@@ -47,47 +39,38 @@ struct Split {
 Split split_of(int w);
 
 /**
- * @brief Lists the widths of all sub-multiplier modules needed for opt.n.
- * @param opt Generator settings (n and base are used).
+ * @brief Lists the widths of all sub-multiplier modules needed for N = n.
+ * @param n Operand width of the top level.
  * @return Distinct widths in ascending order, so every module can be defined
  *         before it is instantiated. The top level itself is not included,
  *         the list is empty for N = 1.
- * @throws std::invalid_argument if the options are invalid.
+ * @throws std::invalid_argument if n is out of range.
  */
-std::vector<int> required_widths(const Options& opt);
+std::vector<int> required_widths(int n);
 
 /**
- * @brief Checks that s can name the top level module.
- * @param s Candidate name.
- * @return true for a plain Verilog identifier that is neither a reserved word
- *         nor a signal name used inside the generated module.
+ * @brief Checks the operand width.
+ * @param n Operand width N.
+ * @throws std::invalid_argument if n is not in 1..kMaxWidth.
  */
-bool valid_module_name(const std::string& s);
-
-/**
- * @brief Checks the fields used by the generator.
- * @param opt Settings to check.
- * @throws std::invalid_argument naming the first invalid field.
- */
-void validate(const Options& opt);
+void validate(int n);
 
 /**
  * @brief Name of the w bit sub-multiplier module.
- * @param opt Generator settings (top and base are used).
  * @param w Operand width of the sub-multiplier.
- * @return `TOP_leaf_wW` for w <= base, otherwise `TOP_kara_wW`,
- *         where TOP is opt.top and W is w.
+ * @return `karatsuba_mul_leaf_wW` for w <= kLeafWidth, otherwise
+ *         `karatsuba_mul_kara_wW`, where W is w.
  */
-std::string mul_module(const Options& opt, int w);
+std::string mul_module(int w);
 
 /**
  * @brief Generates the synthesisable multiplier.
- * @param opt Generator settings.
+ * @param n Operand width N.
  * @return Verilog text: the leaf and Karatsuba sub-modules followed by the
  *         pipelined top level module with latency kLatency.
- * @throws std::invalid_argument if the options are invalid.
+ * @throws std::invalid_argument if n is out of range.
  */
-std::string generate_rtl(const Options& opt);
+std::string generate_rtl(int n);
 
 }  // namespace karatsuba
 

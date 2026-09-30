@@ -77,13 +77,12 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">generator.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Emits the synthesisable RTL (TOP is the top level name):  
+<p>Emits the synthesisable RTL:  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="generator_8h_source.html">generator.h</a>&quot;</code><br />
 <code>#include &lt;set&gt;</code><br />
@@ -94,7 +93,7 @@ Include dependency graph for generator.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="generator_8cpp__incl.png" border="0" usemap="#asrc_2generator_8cpp" alt=""/></div>
 <map name="asrc_2generator_8cpp" id="asrc_2generator_8cpp">
-<area shape="rect" title="Emits the synthesisable RTL (TOP is the top level name):" alt="" coords="138,5,261,31"/>
+<area shape="rect" title="Emits the synthesisable RTL:" alt="" coords="138,5,261,31"/>
 <area shape="rect" href="generator_8h.html" title="Generator of a pipelined N x N &#45;&gt; 2N unsigned Karatsuba multiplier in Verilog&#45;2001." alt="" coords="29,79,116,104"/>
 <area shape="poly" title=" " alt="" coords="180,33,107,74,104,69,178,28"/>
 <area shape="rect" title=" " alt="" coords="141,79,181,104"/>
@@ -153,51 +152,43 @@ Functions</h2></td></tr>
 <tr class="memitem:a9e9f2f969b850be698edc0e64fcec96c" id="r_a9e9f2f969b850be698edc0e64fcec96c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a9e9f2f969b850be698edc0e64fcec96c">karatsuba::anonymous_namespace{generator.cpp}::emit_phase</a> (std::ostringstream &amp;os, bool pipe, int stage, const std::string &amp;text)</td></tr>
 <tr class="memdesc:a9e9f2f969b850be698edc0e64fcec96c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the comment line in front of one phase of a Karatsuba step.  <br /></td></tr>
 <tr class="separator:a9e9f2f969b850be698edc0e64fcec96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63f8860c3a389cf961d6c6662663159e" id="r_a63f8860c3a389cf961d6c6662663159e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a63f8860c3a389cf961d6c6662663159e">karatsuba::anonymous_namespace{generator.cpp}::emit_step</a> (std::ostringstream &amp;os, const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt, int w, bool pipe)</td></tr>
-<tr class="memdesc:a63f8860c3a389cf961d6c6662663159e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the body of one Karatsuba step on the w bit ports a, b.  <br /></td></tr>
-<tr class="separator:a63f8860c3a389cf961d6c6662663159e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1c3a3329c89c21721fa5ff81e6bc66" id="r_a8e1c3a3329c89c21721fa5ff81e6bc66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a8e1c3a3329c89c21721fa5ff81e6bc66">karatsuba::anonymous_namespace{generator.cpp}::emit_step</a> (std::ostringstream &amp;os, int w, bool pipe)</td></tr>
+<tr class="memdesc:a8e1c3a3329c89c21721fa5ff81e6bc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the body of one Karatsuba step on the w bit ports a, b.  <br /></td></tr>
+<tr class="separator:a8e1c3a3329c89c21721fa5ff81e6bc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c59d2ecc3d48de57fa713485b49db0" id="r_a40c59d2ecc3d48de57fa713485b49db0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a40c59d2ecc3d48de57fa713485b49db0">karatsuba::anonymous_namespace{generator.cpp}::emit_header</a> (std::ostringstream &amp;os, const std::string &amp;name, int w, const std::string &amp;comment, const std::string &amp;extra_ports)</td></tr>
 <tr class="memdesc:a40c59d2ecc3d48de57fa713485b49db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the module header with the operand and product ports.  <br /></td></tr>
 <tr class="separator:a40c59d2ecc3d48de57fa713485b49db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599a7b2c70a342e3f1afdb49a4e9e74b" id="r_a599a7b2c70a342e3f1afdb49a4e9e74b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a599a7b2c70a342e3f1afdb49a4e9e74b">karatsuba::anonymous_namespace{generator.cpp}::emit_leaf</a> (std::ostringstream &amp;os, const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt, int w)</td></tr>
-<tr class="memdesc:a599a7b2c70a342e3f1afdb49a4e9e74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits a w x w combinational leaf multiplier.  <br /></td></tr>
-<tr class="separator:a599a7b2c70a342e3f1afdb49a4e9e74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67672bf57df4357c6b9717051c32b4c9" id="r_a67672bf57df4357c6b9717051c32b4c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a67672bf57df4357c6b9717051c32b4c9">karatsuba::anonymous_namespace{generator.cpp}::emit_kara</a> (std::ostringstream &amp;os, const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt, int w)</td></tr>
-<tr class="memdesc:a67672bf57df4357c6b9717051c32b4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits a w x w combinational Karatsuba step module.  <br /></td></tr>
-<tr class="separator:a67672bf57df4357c6b9717051c32b4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3399aaa573d030b6e536aea15e3509af" id="r_a3399aaa573d030b6e536aea15e3509af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a3399aaa573d030b6e536aea15e3509af">karatsuba::anonymous_namespace{generator.cpp}::emit_top</a> (std::ostringstream &amp;os, const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt)</td></tr>
-<tr class="memdesc:a3399aaa573d030b6e536aea15e3509af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the pipelined top level module.  <br /></td></tr>
-<tr class="separator:a3399aaa573d030b6e536aea15e3509af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56c94e4ca69da9fb9891621e5d72a7ec" id="r_a56c94e4ca69da9fb9891621e5d72a7ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a56c94e4ca69da9fb9891621e5d72a7ec">karatsuba::valid_module_name</a> (const std::string &amp;s)</td></tr>
-<tr class="memdesc:a56c94e4ca69da9fb9891621e5d72a7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that s can name the top level module.  <br /></td></tr>
-<tr class="separator:a56c94e4ca69da9fb9891621e5d72a7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e899df703688ed59dd9acfaa8770e1" id="r_a32e899df703688ed59dd9acfaa8770e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a32e899df703688ed59dd9acfaa8770e1">karatsuba::validate</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt)</td></tr>
-<tr class="memdesc:a32e899df703688ed59dd9acfaa8770e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the fields used by the generator.  <br /></td></tr>
-<tr class="separator:a32e899df703688ed59dd9acfaa8770e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f3f10b34c9cdd81ca3c76512d17bf4" id="r_a88f3f10b34c9cdd81ca3c76512d17bf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a88f3f10b34c9cdd81ca3c76512d17bf4">karatsuba::anonymous_namespace{generator.cpp}::emit_leaf</a> (std::ostringstream &amp;os, int w)</td></tr>
+<tr class="memdesc:a88f3f10b34c9cdd81ca3c76512d17bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits a w x w combinational leaf: the recursion base, where Karatsuba cannot shrink the operands any more.  <br /></td></tr>
+<tr class="separator:a88f3f10b34c9cdd81ca3c76512d17bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505dab8c1e54e3a2ee669c7f28c0194c" id="r_a505dab8c1e54e3a2ee669c7f28c0194c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a505dab8c1e54e3a2ee669c7f28c0194c">karatsuba::anonymous_namespace{generator.cpp}::emit_kara</a> (std::ostringstream &amp;os, int w)</td></tr>
+<tr class="memdesc:a505dab8c1e54e3a2ee669c7f28c0194c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits a w x w combinational Karatsuba step module.  <br /></td></tr>
+<tr class="separator:a505dab8c1e54e3a2ee669c7f28c0194c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6900a78c1303b6703830d74669dc843" id="r_ad6900a78c1303b6703830d74669dc843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#ad6900a78c1303b6703830d74669dc843">karatsuba::anonymous_namespace{generator.cpp}::emit_top</a> (std::ostringstream &amp;os, int n)</td></tr>
+<tr class="memdesc:ad6900a78c1303b6703830d74669dc843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the pipelined top level module.  <br /></td></tr>
+<tr class="separator:ad6900a78c1303b6703830d74669dc843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76f0a0bc8a4bdf24511d7808b7349c0" id="r_ab76f0a0bc8a4bdf24511d7808b7349c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#ab76f0a0bc8a4bdf24511d7808b7349c0">karatsuba::validate</a> (int n)</td></tr>
+<tr class="memdesc:ab76f0a0bc8a4bdf24511d7808b7349c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the operand width.  <br /></td></tr>
+<tr class="separator:ab76f0a0bc8a4bdf24511d7808b7349c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a019bd86b899d774eb77ec130af0b8054" id="r_a019bd86b899d774eb77ec130af0b8054"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structkaratsuba_1_1Split.html">Split</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a019bd86b899d774eb77ec130af0b8054">karatsuba::split_of</a> (int w)</td></tr>
 <tr class="memdesc:a019bd86b899d774eb77ec130af0b8054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a w bit operand into halves for one Karatsuba step.  <br /></td></tr>
 <tr class="separator:a019bd86b899d774eb77ec130af0b8054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ffa16ce2533bdb5a9d7fdf7e2479575" id="r_a6ffa16ce2533bdb5a9d7fdf7e2479575"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a6ffa16ce2533bdb5a9d7fdf7e2479575">karatsuba::mul_module</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt, int w)</td></tr>
-<tr class="memdesc:a6ffa16ce2533bdb5a9d7fdf7e2479575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the w bit sub-multiplier module.  <br /></td></tr>
-<tr class="separator:a6ffa16ce2533bdb5a9d7fdf7e2479575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac913c971d77125c9161a40fcdf31d444" id="r_ac913c971d77125c9161a40fcdf31d444"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#ac913c971d77125c9161a40fcdf31d444">karatsuba::required_widths</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt)</td></tr>
-<tr class="memdesc:ac913c971d77125c9161a40fcdf31d444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists the widths of all sub-multiplier modules needed for opt.n.  <br /></td></tr>
-<tr class="separator:ac913c971d77125c9161a40fcdf31d444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7db9d31239c09b75160dd8f43bc78bc" id="r_af7db9d31239c09b75160dd8f43bc78bc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#af7db9d31239c09b75160dd8f43bc78bc">karatsuba::generate_rtl</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt)</td></tr>
-<tr class="memdesc:af7db9d31239c09b75160dd8f43bc78bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the synthesisable multiplier.  <br /></td></tr>
-<tr class="separator:af7db9d31239c09b75160dd8f43bc78bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a31323e56acd66f6b5a5e5cec22fa0f83" id="r_a31323e56acd66f6b5a5e5cec22fa0f83"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba_1_1anonymous__namespace_02generator_8cpp_03.html#a31323e56acd66f6b5a5e5cec22fa0f83">karatsuba::anonymous_namespace{generator.cpp}::kReserved</a> []</td></tr>
-<tr class="separator:a31323e56acd66f6b5a5e5cec22fa0f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8879cf60f2cefdf6aa0084ad8a61634d" id="r_a8879cf60f2cefdf6aa0084ad8a61634d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a8879cf60f2cefdf6aa0084ad8a61634d">karatsuba::mul_module</a> (int w)</td></tr>
+<tr class="memdesc:a8879cf60f2cefdf6aa0084ad8a61634d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the w bit sub-multiplier module.  <br /></td></tr>
+<tr class="separator:a8879cf60f2cefdf6aa0084ad8a61634d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67393e9e0fe9863dc686c220710bce4" id="r_ab67393e9e0fe9863dc686c220710bce4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#ab67393e9e0fe9863dc686c220710bce4">karatsuba::required_widths</a> (int n)</td></tr>
+<tr class="memdesc:ab67393e9e0fe9863dc686c220710bce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists the widths of all sub-multiplier modules needed for N = n.  <br /></td></tr>
+<tr class="separator:ab67393e9e0fe9863dc686c220710bce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d4ba7c0d575ca8bebe4c306e5cee2a" id="r_a24d4ba7c0d575ca8bebe4c306e5cee2a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a24d4ba7c0d575ca8bebe4c306e5cee2a">karatsuba::generate_rtl</a> (int n)</td></tr>
+<tr class="memdesc:a24d4ba7c0d575ca8bebe4c306e5cee2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the synthesisable multiplier.  <br /></td></tr>
+<tr class="separator:a24d4ba7c0d575ca8bebe4c306e5cee2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Emits the synthesisable RTL (TOP is the top level name): </p>
+<div class="textblock"><p>Emits the synthesisable RTL: </p>
 <ul>
-<li><code>TOP_leaf_wK</code>: K x K combinational leaf multiplier (K &lt;= base);</li>
-<li><code>TOP_kara_wK</code>: K x K combinational Karatsuba step (K &gt; base);</li>
-<li><code>TOP</code>: pipelined top level, its own Karatsuba step is spread over three register stages (latency 3, one result per clock). </li>
+<li><code>karatsuba_mul_leaf_wK</code>: K x K combinational leaf, long multiplication from bitwise AND and adders (K &lt;= kLeafWidth);</li>
+<li><code>karatsuba_mul_kara_wK</code>: K x K combinational Karatsuba step;</li>
+<li><code>karatsuba_mul</code>: pipelined top level, its own Karatsuba step is spread over three register stages (latency 3, one result per clock). The Verilog multiplication operator '*' is never emitted, the output contains no '*' character at all (not even in comments): every product is reduced to AND, addition, subtraction and shifts. </li>
 </ul>
 
 <p class="definition">Definition in file <a class="el" href="generator_8cpp_source.html">generator.cpp</a>.</p>

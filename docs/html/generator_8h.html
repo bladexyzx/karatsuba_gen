@@ -109,7 +109,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="poly" title=" " alt="" coords="141,43,103,80,99,77,138,39"/>
 <area shape="rect" href="main_8cpp.html" title="Entry point: karatsuba_gen N [options] writes the Verilog description of a pipelined N x N &#45;&gt; 2N unsi..." alt="" coords="113,152,210,177"/>
 <area shape="poly" title=" " alt="" coords="164,45,164,152,159,152,159,45"/>
-<area shape="rect" href="generator_8cpp.html" title="Emits the synthesisable RTL (TOP is the top level name):" alt="" coords="199,79,321,104"/>
+<area shape="rect" href="generator_8cpp.html" title="Emits the synthesisable RTL:" alt="" coords="199,79,321,104"/>
 <area shape="poly" title=" " alt="" coords="190,36,245,76,242,81,186,41"/>
 <area shape="rect" href="cli_8cpp.html" title="Command line parsing and file output of karatsuba_gen." alt="" coords="5,152,88,177"/>
 <area shape="poly" title=" " alt="" coords="78,117,56,153,51,151,73,114"/>
@@ -121,9 +121,6 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkaratsuba_1_1Options.html">karatsuba::Options</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">All settings of one program run.  <a href="structkaratsuba_1_1Options.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkaratsuba_1_1Split.html">karatsuba::Split</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Widths of one Karatsuba step on a w bit operand: A = A1 * 2^lo + A0, where A0 has lo bits, A1 has hi bits and A1 + A0 has mid bits.  <a href="structkaratsuba_1_1Split.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,36 +136,32 @@ Functions</h2></td></tr>
 <tr class="memitem:a019bd86b899d774eb77ec130af0b8054" id="r_a019bd86b899d774eb77ec130af0b8054"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structkaratsuba_1_1Split.html">Split</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a019bd86b899d774eb77ec130af0b8054">karatsuba::split_of</a> (int w)</td></tr>
 <tr class="memdesc:a019bd86b899d774eb77ec130af0b8054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a w bit operand into halves for one Karatsuba step.  <br /></td></tr>
 <tr class="separator:a019bd86b899d774eb77ec130af0b8054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac913c971d77125c9161a40fcdf31d444" id="r_ac913c971d77125c9161a40fcdf31d444"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#ac913c971d77125c9161a40fcdf31d444">karatsuba::required_widths</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt)</td></tr>
-<tr class="memdesc:ac913c971d77125c9161a40fcdf31d444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists the widths of all sub-multiplier modules needed for opt.n.  <br /></td></tr>
-<tr class="separator:ac913c971d77125c9161a40fcdf31d444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56c94e4ca69da9fb9891621e5d72a7ec" id="r_a56c94e4ca69da9fb9891621e5d72a7ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a56c94e4ca69da9fb9891621e5d72a7ec">karatsuba::valid_module_name</a> (const std::string &amp;s)</td></tr>
-<tr class="memdesc:a56c94e4ca69da9fb9891621e5d72a7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that s can name the top level module.  <br /></td></tr>
-<tr class="separator:a56c94e4ca69da9fb9891621e5d72a7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e899df703688ed59dd9acfaa8770e1" id="r_a32e899df703688ed59dd9acfaa8770e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a32e899df703688ed59dd9acfaa8770e1">karatsuba::validate</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt)</td></tr>
-<tr class="memdesc:a32e899df703688ed59dd9acfaa8770e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the fields used by the generator.  <br /></td></tr>
-<tr class="separator:a32e899df703688ed59dd9acfaa8770e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ffa16ce2533bdb5a9d7fdf7e2479575" id="r_a6ffa16ce2533bdb5a9d7fdf7e2479575"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a6ffa16ce2533bdb5a9d7fdf7e2479575">karatsuba::mul_module</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt, int w)</td></tr>
-<tr class="memdesc:a6ffa16ce2533bdb5a9d7fdf7e2479575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the w bit sub-multiplier module.  <br /></td></tr>
-<tr class="separator:a6ffa16ce2533bdb5a9d7fdf7e2479575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7db9d31239c09b75160dd8f43bc78bc" id="r_af7db9d31239c09b75160dd8f43bc78bc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#af7db9d31239c09b75160dd8f43bc78bc">karatsuba::generate_rtl</a> (const <a class="el" href="structkaratsuba_1_1Options.html">Options</a> &amp;opt)</td></tr>
-<tr class="memdesc:af7db9d31239c09b75160dd8f43bc78bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the synthesisable multiplier.  <br /></td></tr>
-<tr class="separator:af7db9d31239c09b75160dd8f43bc78bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab67393e9e0fe9863dc686c220710bce4" id="r_ab67393e9e0fe9863dc686c220710bce4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#ab67393e9e0fe9863dc686c220710bce4">karatsuba::required_widths</a> (int n)</td></tr>
+<tr class="memdesc:ab67393e9e0fe9863dc686c220710bce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists the widths of all sub-multiplier modules needed for N = n.  <br /></td></tr>
+<tr class="separator:ab67393e9e0fe9863dc686c220710bce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76f0a0bc8a4bdf24511d7808b7349c0" id="r_ab76f0a0bc8a4bdf24511d7808b7349c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#ab76f0a0bc8a4bdf24511d7808b7349c0">karatsuba::validate</a> (int n)</td></tr>
+<tr class="memdesc:ab76f0a0bc8a4bdf24511d7808b7349c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the operand width.  <br /></td></tr>
+<tr class="separator:ab76f0a0bc8a4bdf24511d7808b7349c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8879cf60f2cefdf6aa0084ad8a61634d" id="r_a8879cf60f2cefdf6aa0084ad8a61634d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a8879cf60f2cefdf6aa0084ad8a61634d">karatsuba::mul_module</a> (int w)</td></tr>
+<tr class="memdesc:a8879cf60f2cefdf6aa0084ad8a61634d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the w bit sub-multiplier module.  <br /></td></tr>
+<tr class="separator:a8879cf60f2cefdf6aa0084ad8a61634d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d4ba7c0d575ca8bebe4c306e5cee2a" id="r_a24d4ba7c0d575ca8bebe4c306e5cee2a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a24d4ba7c0d575ca8bebe4c306e5cee2a">karatsuba::generate_rtl</a> (int n)</td></tr>
+<tr class="memdesc:a24d4ba7c0d575ca8bebe4c306e5cee2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the synthesisable multiplier.  <br /></td></tr>
+<tr class="separator:a24d4ba7c0d575ca8bebe4c306e5cee2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a551219645b3269c138ae5026f514e69e" id="r_a551219645b3269c138ae5026f514e69e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a551219645b3269c138ae5026f514e69e">karatsuba::kMaxWidth</a> = 4096</td></tr>
 <tr class="memdesc:a551219645b3269c138ae5026f514e69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Largest supported operand width N.  <br /></td></tr>
 <tr class="separator:a551219645b3269c138ae5026f514e69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a690c88f7ef071cdb2a3cccdf773b43ce" id="r_a690c88f7ef071cdb2a3cccdf773b43ce"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a690c88f7ef071cdb2a3cccdf773b43ce">karatsuba::kMinBase</a> = 3</td></tr>
-<tr class="memdesc:a690c88f7ef071cdb2a3cccdf773b43ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Smallest leaf width; smaller leaves would not end the recursion.  <br /></td></tr>
-<tr class="separator:a690c88f7ef071cdb2a3cccdf773b43ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f68242b25738dcecb63c1523c7ed1c" id="r_a82f68242b25738dcecb63c1523c7ed1c"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a82f68242b25738dcecb63c1523c7ed1c">karatsuba::kMaxBase</a> = 32</td></tr>
-<tr class="memdesc:a82f68242b25738dcecb63c1523c7ed1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Largest leaf width.  <br /></td></tr>
-<tr class="separator:a82f68242b25738dcecb63c1523c7ed1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbe07a8a40438ce9ae11c91eed65be5" id="r_a6cbe07a8a40438ce9ae11c91eed65be5"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a6cbe07a8a40438ce9ae11c91eed65be5">karatsuba::kLeafWidth</a> = 4</td></tr>
+<tr class="separator:a6cbe07a8a40438ce9ae11c91eed65be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92073b91688a51291eb1cf21a1ce6309" id="r_a92073b91688a51291eb1cf21a1ce6309"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#a92073b91688a51291eb1cf21a1ce6309">karatsuba::kLatency</a> = 3</td></tr>
 <tr class="memdesc:a92073b91688a51291eb1cf21a1ce6309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pipeline depth in clocks, fixed by the specification.  <br /></td></tr>
 <tr class="separator:a92073b91688a51291eb1cf21a1ce6309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3eda9d39f0025ba327bbe1aa6ef115" id="r_aca3eda9d39f0025ba327bbe1aa6ef115"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacekaratsuba.html#aca3eda9d39f0025ba327bbe1aa6ef115">karatsuba::kTop</a> [] = &quot;karatsuba_mul&quot;</td></tr>
+<tr class="memdesc:aca3eda9d39f0025ba327bbe1aa6ef115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the top level module.  <br /></td></tr>
+<tr class="separator:aca3eda9d39f0025ba327bbe1aa6ef115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generator of a pipelined N x N -&gt; 2N unsigned Karatsuba multiplier in Verilog-2001. </p>

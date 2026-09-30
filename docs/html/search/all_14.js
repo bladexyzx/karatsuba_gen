@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usage_0',['usage',['../namespacekaratsuba.html#acf286982a37230947e780b302d944529',1,'karatsuba']]]
+  ['перемножить_20свои_20числа_0',['Тестбенч: перемножить свои числа',['../index.html#autotoc_md5',1,'']]]
 ];
